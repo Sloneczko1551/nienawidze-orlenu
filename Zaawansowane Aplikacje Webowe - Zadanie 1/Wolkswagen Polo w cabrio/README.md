@@ -1,4 +1,4 @@
-**Cbario_al** :+1:
+**cabrio_al** :+1:
 Klasa Cabrio przechowuje nazwę i markę samochodu oraz informację, czy samochód porusza się oraz czy dach jest otwarty. Konstruktor klasy Cabrio przyjmuje argumenty name i brand i inicjuje pola isMoving i isRoofOpen na false.
 
 Metoda openRoof otwiera dach, ale tylko jeśli samochód nie porusza się. W przeciwnym wypadku wyświetlany jest komunikat o błędzie. Metoda closeRoof zamyka dach, ale także tylko wtedy, gdy samochód nie porusza się. Metoda start ustawia wartość pola isMoving na true, co oznacza, że samochód porusza się. Metoda stop ustawia wartość pola isMoving na false, co oznacza, że samochód nie porusza się.
