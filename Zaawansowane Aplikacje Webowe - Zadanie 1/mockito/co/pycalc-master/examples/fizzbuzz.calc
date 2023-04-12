@@ -1,0 +1,21 @@
+limit_raw = input("Limit: ")
+limit = 0;
+    get(map(
+            (x) =
+                limit = (limit*10) + (x-48),
+            limit_raw
+        ),
+        len(limit_raw)-1
+    )
+
+map(
+    (x) =
+        branch(
+            x % 15 == 0, () = print("fizzbuzz "),
+            x % 3 == 0, () = print("fizz "),
+            x % 5 == 0, () = print("buzz "),
+            () = print(x, " ")
+        ),
+    range(1, limit+1)
+)
+println()
