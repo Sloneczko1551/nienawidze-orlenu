@@ -5,16 +5,16 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CabrioTest {
     @Test
     public void testCabrio() {
-        Cabrio car = new Cabrio("911", "Porsche");
-        assertEquals("911", car.getName());
-        assertEquals("Porsche", car.getBrand());
+        Cabrio car = new Cabrio("Gelandewagen", "Mercedes");
+        assertEquals("Gelandewagen", car.getName());
+        assertEquals("Mercedes", car.getBrand());
         assertFalse(car.isMoving());
         assertFalse(car.isRoofOpen());
     }
 
     @Test
     public void testOpenRoofWhileDriving() {
-        Cabrio car = new Cabrio("911", "Porsche");
+        Cabrio car = new Cabrio("Gelandewagen", "Mercedes");
         car.startMoving();
         assertThrows(IllegalStateException.class, () -> {
             car.openRoof();
@@ -24,7 +24,7 @@ public class CabrioTest {
 
     @Test
     public void testCloseRoofWhileDriving() {
-        Cabrio car = new Cabrio("911", "Porsche");
+        Cabrio car = new Cabrio("Gelandewagen", "Mercedes");
         car.startMoving();
         assertThrows(IllegalStateException.class, () -> {
             car.closeRoof();
@@ -34,7 +34,7 @@ public class CabrioTest {
 
     @Test
     public void testOpenAndCloseRoof() {
-        Cabrio car = new Cabrio("911", "Porsche");
+        Cabrio car = new Cabrio("Gelandewagen", "Mercedes");
         assertFalse(car.isRoofOpen());
         car.openRoof();
         assertTrue(car.isRoofOpen());
