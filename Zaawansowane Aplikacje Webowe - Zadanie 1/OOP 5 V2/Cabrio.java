@@ -61,7 +61,7 @@ public void closeRoof() {
 
 
 public static void main(String[] args) {
-    Cabrio car = new Cabrio("MX-5", "Mazda");
+    Cabrio car = new Cabrio("Polo", "Wolkswagen");
     System.out.println("Initial state: Moving: " + car.isMoving() + ", Roof Open: " + car.isRoofOpen());
 
     car.openRoof();
